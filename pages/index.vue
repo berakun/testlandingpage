@@ -1,24 +1,27 @@
 <template>
   <div>
     <div>
-      <Navbar />
+      <SinglepageNavbar />
     </div>
     <div>
-      <SinglePage />
+      <SinglepageSinglePage />
     </div>
+    <hr class="container mx-auto bg-gray-100" style="border-top: 1px solid #bbb">
     <div>
-      <Tutorial />
+      <SinglepageSliding />
+    </div>
+    <hr class="container mx-auto bg-gray-100" style="border-top: 1px solid #bbb">
+    <div>
+      <SinglepageTutorial />
     </div>
   </div>
 </template>
 
 <script>
-import Tutorial from '../components/singlepage/Tutorial.vue';
-import SinglePage from '../components/singlepage/SinglePage.vue';
-import Navbar from '../components/singlepage/Navbar.vue';
+
+
 
 export default {
-  name: "IndexPage",
-  components: { Navbar, SinglePage, Tutorial }
+  name: "IndexPage"
 }
 </script>

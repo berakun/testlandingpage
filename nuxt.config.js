@@ -2,6 +2,28 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  modules: [
+    '@nuxtjs/axios',
+  ],
+
+  axios: {
+    // tambahkan konfigurasi Axios di sini
+  },
+
+  router: {
+    routes: [
+      {
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        path: '/admin',
+        component: 'pages/admin.vue'
+      }
+    ]
+  },
+
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'testlandingpage',

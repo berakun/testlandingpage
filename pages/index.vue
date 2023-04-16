@@ -12,7 +12,14 @@
     </div>
     <hr class="container mx-auto bg-gray-100" style="border-top: 1px solid #bbb">
     <div>
-      <SinglepageTutorial />
+      <SinglepageFeaturePage />
+    </div>
+    <hr class="container mx-auto bg-gray-100" style="border-top: 1px solid #bbb">
+    <div>
+      <SinglepageTestiPage />
+    </div>
+    <div>
+      <SinglepageBottomNavbar />
     </div>
   </div>
 </template>

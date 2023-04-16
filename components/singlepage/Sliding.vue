@@ -1,48 +1,49 @@
-<!-- <template>
-  <div class="w-screen py-8 px-8">
-
-    <div class="carousel">
-      <vue-slick-carousel :options="slickOptions">
-        <div v-for="(item, index) in items" :key="index">
-          <img :src="item.image" alt="carousel item" />
+<template>
+  <div class="container mx-auto py-10">
+    <carousel :perPage="4" :navigationEnabled="true" :paginationEnabled="false" ref="carousel">
+      <slide v-for="item in items" :key="item.id">
+        <div class="carousel-item">
+          <img :src="item.image" :alt="item.name">
         </div>
-      </vue-slick-carousel>
-    </div>
-
+      </slide>
+    </carousel>
   </div>
 </template>
 
 <script>
-
-import VueSlickCarousel from 'vue-slick-carousel'
+import { Carousel, Slide } from 'vue-carousel'
+import gambar from '../assets/gambar/1.jpg';
 
 export default {
   components: {
-    VueSlickCarousel
+    Carousel,
+    Slide
   },
   data() {
     return {
       items: [
-        {
-          image: '../assets/gambar/1.jpg'
-        },
-        {
-          image: '../assets/gambar/2.jpg'
-        },
-        {
-          image: '../assets/gambar/3.jpg'
-        }
-      ],
-      slickOptions: {
-        slidesToShow: 3,
-        centerMode: true,
-        centerPadding: '60px',
-        dots: true,
-        infinite: true,
-        speed: 500,
-        variableWidth: true
-      }
+        { id: 1, name: 'Gambar 1', image: gambar },
+        { id: 2, name: 'Gambar 2', image: gambar },
+        { id: 3, name: 'Gambar 3', image: gambar },
+        { id: 4, name: 'Gambar 4', image: gambar },
+        { id: 5, name: 'Gambar 5', image: gambar },
+        { id: 6, name: 'Gambar 6', image: gambar }
+      ]
+    }
+  },
+  methods: {
+    prev() {
+      this.$refs.carousel.prev();
+    },
+    next() {
+      this.$refs.carousel.next();
     }
   }
 }
-</script> -->
+</script>
+
+<style scoped>
+.carousel-nav button:hover {
+  background-color: #eee;
+}
+</style>

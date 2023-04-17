@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800 w-full">
+  <nav class="bg-gray-800">
     <div class="mx-auto px-auto sm:px-6 lg:px-8">
       <div class="relative items-center h-16">
         <!-- Menu -->

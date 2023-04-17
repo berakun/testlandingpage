@@ -2,27 +2,8 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  modules: [
-    '@nuxtjs/axios',
-  ],
-
-  axios: {
-    // tambahkan konfigurasi Axios di sini
-  },
-
-  router: {
-    routes: [
-      {
-        path: '/',
-        component: 'pages/index.vue'
-      },
-      {
-        path: '/admin',
-        component: 'pages/admin.vue'
-      }
-    ]
-  },
-
+  modules: ['@nuxtjs/axios'],
+  plugins: ['~/plugins/axios.js'],
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -45,10 +26,6 @@ export default {
   css: [
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -56,10 +33,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

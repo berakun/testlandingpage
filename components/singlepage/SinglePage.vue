@@ -1,21 +1,21 @@
 <template>
-  <div class="bg-white w-screen pb-[60px] pt-[70px]">
-    <div class="container mx-auto flex space-x-[200px] grid grid-col-2 grid-flow-col pt-6">
-      <div class="text-left text-6xl font-bold">
+  <div class="bg-white pb-[60px] pt-[70px]">
+    <div class="container mx-auto flex space-x-10 grid grid-col-2 grid-flow-col pt-6">
+      <div class="text-left text-5xl font-bold">
         <div>Lorem Ipsum</div>
         <div class="pt-4">Dolor Sit Amet</div>
-        <p class="text-sm pt-6 font-normal">
+        <p class="text-xs pt-6 font-normal">
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
         </p>
-        <div class="font-normal pt-6 text-4xl">
+        <div class="font-normal pt-6 text-2xl">
           <button class="bg-gray-500 text-black font-normal py-4 px-6 rounded-lg w-full">Lorem ipsum</button>
         </div>
       </div>
       <div>
-        <video controls class="video pr-8 w-full h-full max-w-[800px]">
+        <video autoplay loop muted class="video pr-8 w-full h-full max-w-[800px]">
           <source :src="videoLink" type="video/mp4">
           Your browser does not support the video tag.
         </video>

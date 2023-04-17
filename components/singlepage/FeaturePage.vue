@@ -3,7 +3,7 @@
     <ol>
       <div>
         <li class="text-2xl font-bold">Lore Ipsum
-          <div class="text-sm font-normal">
+          <div class="text-xs font-normal">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim
           </div>
@@ -11,7 +11,7 @@
       </div>
       <div>
         <li class="text-2xl font-bold">Lore Ipsum
-          <div class="text-sm font-normal">
+          <div class="text-xs font-normal">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim
           </div>
@@ -19,7 +19,7 @@
       </div>
       <div>
         <li class="text-2xl font-bold">Lore Ipsum
-          <div class="text-sm font-normal">
+          <div class="text-xs font-normal">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim
           </div>
@@ -27,7 +27,7 @@
       </div>
       <div>
         <li class="text-2xl font-bold">Lore Ipsum
-          <div class="text-sm font-normal">
+          <div class="text-xs font-normal">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim
           </div>
@@ -35,7 +35,7 @@
       </div>
       <div>
         <li class="text-2xl font-bold">Lore Ipsum
-          <div class="text-sm font-normal">
+          <div class="text-xs font-normal">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim
           </div>
@@ -43,7 +43,7 @@
       </div>
       <div>
         <li class="text-2xl font-bold">Lore Ipsum
-          <div class="text-sm font-normal">
+          <div class="text-xs font-normal">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim
           </div>

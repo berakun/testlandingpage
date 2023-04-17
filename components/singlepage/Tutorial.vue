@@ -69,21 +69,8 @@
 // }
 
 
-import axios from 'axios';
-
 export default {
-  async asyncData({ $axios }) {
-    const response = await $axios.get('/api/data');
-    return {
-      data: response.data,
-    };
-  },
-  methods: {
-    async fetchData() {
-      const response = await axios.get('/api/data');
-      // lakukan sesuatu dengan data yang diterima
-    },
-  },
+
 };
 
 

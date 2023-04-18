@@ -21,16 +21,25 @@
             {{ k + 1 }}
           </td>
           <td class="px-6 py-4">
-            {{ v.product_name }}
+            {{ v.title }}
           </td>
           <td class="px-6 py-4">
-            {{ v.color }}
+            {{ v.author }}
           </td>
           <td class="px-6 py-4">
-            {{ v.category }}
+            {{ v.publisher }}
+          </td>
+          <td class="px-6 py-4">
+            {{ v.publication_date }}
+          </td>
+          <td class="px-6 py-4">
+            {{ v.genre }}
           </td>
           <td class="px-6 py-4">
             {{ v.price }}
+          </td>
+          <td class="px-6 py-4">
+            {{ v.quantity }}
           </td>
         </tr>
       </tbody>
@@ -45,10 +54,13 @@ export default {
     return {
       headers: [
         { text: 'no', value: '' },
-        { text: 'product_name', value: 'product_name' },
-        { text: 'color', value: 'color' },
-        { text: 'category', value: 'category' },
-        { text: 'price', value: 'price' }
+        { text: 'title', value: 'title' },
+        { text: 'author', value: 'author' },
+        { text: 'publisher', value: 'publisher' },
+        { text: 'publication_date', value: 'publication_date' },
+        { text: 'genre', value: 'genre' },
+        { text: 'price', value: 'price' },
+        { text: 'quantity', value: 'quantity' }
       ],
       users: [],
       search: '',
@@ -65,7 +77,7 @@ export default {
       else {
         return this.users.filter(user => {
           return Object.keys(user).some(key => {
-            if (key === 'product_name') {
+            if (key === 'title') {
               return String(user[key]).toLowerCase().includes(this.search.toLowerCase());
             }
           });

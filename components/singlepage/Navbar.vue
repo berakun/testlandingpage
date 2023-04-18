@@ -1,10 +1,10 @@
 <template>
-  <nav class="bg-gray-800 fixed top-0 left-0 z-50 w-full">
+  <nav class="bg-gray-700 fixed top-0 left-0 z-50 w-full">
     <div class="mx-auto px-auto sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <!-- Logo -->
-        <div class="flex-shrink-0 flex items-center">
-          <img class="hidden lg:block h-8 w-auto" :src="wa" alt="Logo" />
+        <div class="flex-shrink-0 flex items-center w-10 h-10">
+          <img class="hidden lg:block h-8 w-auto" :src="Logotest" alt="Logo" />
         </div>
 
         <!-- Menu -->
@@ -41,6 +41,7 @@ import fb from '../assets/icon/fb.svg';
 import ig from '../assets/icon/ig.svg';
 import linkedin from '../assets/icon/linkedin.svg';
 import wa from '../assets/icon/wa.svg';
+import Logotest from '../assets/icon/Logotest.svg';
 
 export default {
   data() {
@@ -48,7 +49,8 @@ export default {
       fb: fb,
       ig: ig,
       linkedin: linkedin,
-      wa: wa
+      wa: wa,
+      Logotest: Logotest
     }
   }
 }
